@@ -10,7 +10,7 @@ The most secure cloud server on the most secure operating system.
 ### Goal
 
 * OpenBSD 6.6 with full disk encryption
-* Nextcloud 18.0.3
+* Nextcloud 18.0.4
 * PostgreSQL
 * PHP 7.3 and PHP-FPM
 * OpenBSD httpd
@@ -789,19 +789,19 @@ Installing Nextcloud
 1. We’ve come quite a long way. Fortunately, we’re almost there! Grab and verify the most current version of Nextcloud and extract it to `/var/www/nextcloud`:
 
 	```console
-	$ ftp https://download.nextcloud.com/server/releases/nextcloud-18.0.3.zip
-	$ ftp https://download.nextcloud.com/server/releases/nextcloud-18.0.3.zip.asc
+	$ ftp https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip
+	$ ftp https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip.asc
 	$ doas pkg_add gnupg unzip
 	$ gpg2 --fetch-keys https://nextcloud.com/nextcloud.asc
-	$ gpg2 --verify nextcloud-18.0.3.zip.asc
-	gpg: assuming signed data in 'nextcloud-18.0.3.zip'
-	gpg: Signature made Wed Mar 18 14:28:18 2020 UTC
+	$ gpg2 --verify nextcloud-18.0.4.zip.asc
+	gpg: assuming signed data in 'nextcloud-18.0.4.zip'
+	gpg: Signature made Wed Apr 22 19:35:41 2020 UTC
 	gpg:                using RSA key D75899B9A724937A
 	gpg: Good signature from "Nextcloud Security <security@nextcloud.com>" [unknown]
 	gpg: WARNING: This key is not certified with a trusted signature!
 	gpg:          There is no indication that the signature belongs to the owner.
 	Primary key fingerprint: 2880 6A87 8AE4 23A2 8372  792E D758 99B9 A724 937A
-	$ doas unzip -d /var/www nextcloud-18.0.3.zip
+	$ doas unzip -d /var/www nextcloud-18.0.4.zip
 	$ doas chown -R www:www /var/www/nextcloud
 	```
 
