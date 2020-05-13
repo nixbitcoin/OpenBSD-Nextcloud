@@ -869,7 +869,7 @@ Fix Warnings
 
 1. If you see the warning `PHP does not seem to be setup properly to query system environment variables. The test with getenv("PATH") only returns an empty response. Please check the installation documentation ↗ for PHP configuration notes and the PHP configuration of your server, especially when using php-fpm.`
 
-	Edit `/etc/php-fpm.conf` and uncomment these lines
+	Edit `/etc/php-fpm.conf` and uncomment these lines, by removing the `;`
 
 	```
 	;env[HOSTNAME] = $HOSTNAME
