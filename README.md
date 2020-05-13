@@ -933,7 +933,9 @@ Tests
 
 1. Go to [scan.nextcloud.com](https://scan.nextcloud.com/) and enter your dynamic DNS hostname. 
 
-2. Go to [ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/) and enter your dynamic DNS hostname.
+2. Go to [ssllabs.com/ssltest](https://www.ssllabs.com/ssltest/) and enter your dynamic DNS hostname.
+
+3. Go to [hardenize.com](https://www.hardenize.com), enter your dynamic DNS hostname, and look at the "WWW" section.
 
 Backups
 ---
